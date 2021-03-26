@@ -27,12 +27,14 @@ namespace Projeto.Repository.DataSource
             modelBuilder.Configurations.Add(new MedicoMAP());
             modelBuilder.Configurations.Add(new PacienteMAP());
             modelBuilder.Configurations.Add(new ServicoMAP());
+            modelBuilder.Configurations.Add(new FilaMAP());
         }
 
         //Regra 4) Declarar um DbSet para cada entidade..
-        public DbSet<Medico> Medico { get; set; } //LAMBDA..
-        public DbSet<Paciente> Paciente { get; set; } //LAMBDA..
-        public DbSet<Servico> Servico { get; set; } //LAMBDA..
+        public DbSet<Medico> Medico { get; set; }
+        public DbSet<Paciente> Paciente { get; set; }
+        public DbSet<Servico> Servico { get; set; }
+        public DbSet<Fila> Fila { get; set; }
 
     }
 }

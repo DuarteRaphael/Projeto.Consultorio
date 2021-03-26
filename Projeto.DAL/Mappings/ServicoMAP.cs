@@ -21,9 +21,9 @@ namespace Projeto.DAL.Mappings
             //colunas
             Property(s => s.IdServico).HasColumnName("IDSERVICO");
             Property(s => s.Nome).HasColumnName("NOME").HasMaxLength(50).IsRequired();
-            Property(s => s.Preco).HasColumnName("PRECO").HasPrecision(18, 2).IsRequired();
-            Property(s => s.ParteMedico).HasColumnName("COMISSAOMEDICO").HasPrecision(18, 2).IsRequired();
-            Property(s => s.ParteClinica).HasColumnName("COMISSAOCLINICA").HasPrecision(18, 2).IsRequired();
+            Property(s => s.Preco).HasColumnName("PRECO").HasPrecision(3, 2).IsRequired();
+            Property(s => s.ParteMedico).HasColumnName("COMISSAOMEDICO").HasPrecision(3, 2).IsRequired();
+            Property(s => s.ParteClinica).HasColumnName("COMISSAOCLINICA").HasPrecision(3, 2).IsRequired();
         }
     }
 }

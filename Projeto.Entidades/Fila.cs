@@ -9,6 +9,7 @@ namespace Projeto.Entidades
     public class Fila
     {
         public int IdFila { get; set; }
+        public int IdPaciente { get; set; }
         public DateTime DataFila { get; set; }
         public List<Paciente> Pacientes { get; set; }
     }

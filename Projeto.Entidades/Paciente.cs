@@ -15,7 +15,5 @@ namespace Projeto.Entidades
         public string CPF { get; set; }
         public string RG { get; set; }
         public string Telefone { get; set; }
-        public int IdFila { get; set; }
-        public Fila Fila { get; set; }
     }
 }

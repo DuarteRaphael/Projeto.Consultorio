@@ -26,9 +26,6 @@ namespace Projeto.DAL.Mappings
             Property(p => p.CPF).HasColumnName("CPF").HasMaxLength(20).IsOptional();
             Property(p => p.RG).HasColumnName("RG").HasMaxLength(20).IsOptional();
             Property(p => p.Telefone).HasColumnName("TELEFONE").HasMaxLength(20).IsRequired();
-            Property(p => p.IdFila).HasColumnName("IDFILA").IsRequired();
-            //toda fila tem uma lista de pacientes
-            HasRequired(p => p.Fila).WithMany(f => f.Pacientes).HasForeignKey(p => p.IdFila); //chave estrangeire
         }
     }
 }

@@ -20,11 +20,20 @@ namespace Projeto.DAL.Persistence
             }
         }
         //método de atualização
-        public virtual void update(T obj)
+        public virtual void Update(T obj)
         {
             using(Conexao con = new Conexao())
             {
                 con.Entry(obj).State = EntityState.Modified;
+                con.SaveChanges();
+            }
+        }
+        //método de exclusão
+        public virtual void Delete(T obj)
+        {
+            using (Conexao con = new Conexao())
+            {
+                con.Entry(obj).State = EntityState.Deleted;
                 con.SaveChanges();
             }
         }

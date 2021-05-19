@@ -9,3 +9,5 @@ Dependendo do tamanho, público, horário de atendimento e outros fatores, cada 
 Por isso, existem diferentes sistemas, adaptados para demandas de negócios pequenos, médios e grandes.
 
 A premissa desses softwares é organizar os dados necessários para o funcionamento da unidade em um só lugar, facilitando o acesso a informações jurídicas, financeiras, de recursos humanos e do paciente.
+-- Desenvolvimento funturo implantar o RIS
+-- Desenvolvimento futuro implantar o PACS
